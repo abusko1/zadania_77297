@@ -1,0 +1,158 @@
+/* Zmiana fontu na nowoczesny systemowy i ustawienie marginesów body */
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #eef2f0; /* Bardzo jasny, szary odcień zieleni */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2c3e50;
+}
+
+/* Kontener na całą zawartość - ustawienie marginesów i szerokości */
+main, header, footer {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px 0;
+    padding: 25px;
+    background-color: #ffffff;
+}
+
+/* Kolor przewodni - Głęboka zieleń (Forest Green) */
+header {
+    background-color: #1b4d3e; /* Ciemnozielony panel */
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 0;
+}
+
+header h1 {
+    margin: 10px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Zdjęcie profilowe */
+.profile-photo {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Sekcje z zielonym akcentem */
+section {
+    padding: 10px 0;
+    border-left: 5px solid #1b4d3e; /* Zielony pasek z boku sekcji */
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #1b4d3e;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+/* Stylizacja linków w kolorze zielonym */
+a {
+    color: #2e8b57;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #1b4d3e;
+    font-weight: bold;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1b4d3e;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+/* Umiejętności - kafelki */
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li {
+    background-color: #1b4d3e;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Stopka */
+footer {
+    background: transparent;
+    text-align: center;
+    font-style: italic;
+    border: none;
+}
+
+/* Klasa pomocnicza dla daty */
+.date {
+    color: #7f8c8d;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+.buttons {
+    margin: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+#form-section {
+    padding: 40px 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+}
